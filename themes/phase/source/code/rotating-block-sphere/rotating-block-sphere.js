@@ -1,15 +1,3 @@
-title: Rotating block sphere
-tags: [webgl,three.js,demo]
-date: 2015-11-15 09:33:26
-layout: webgl
----
-An array of cubes arranged in concentric rings and oriented to a central point, then rotated in opposing directions.
-
-There's more to do here - there are a lot of redundant faces that aren't really used.
-<!-- more -->
-<div id="webglCanvas" style="width: 100%; height: 600px;"></div>
-<script src="/code/rotating-block-sphere/rotating-block-sphere.js"></script>
-```javascript
 
     var el = document.getElementById('webglCanvas');
     var renderer = new THREE.WebGLRenderer({antialias:true});
@@ -21,7 +9,7 @@ There's more to do here - there are a lot of redundant faces that aren't really 
     el.appendChild( renderer.domElement );
 
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera( 90, el.offsetWidth / el.offsetHeight, 0.1, 1000 );
+    var camera = new THREE.PerspectiveCamera( 100, el.offsetWidth / el.offsetHeight, 0.1, 1000 );
     var cameraPivot = new THREE.Object3D();
     camera.position.x = 0;
     camera.position.y = 20;
@@ -83,6 +71,8 @@ There's more to do here - there are a lot of redundant faces that aren't really 
     }
 
 
+
+
     render = function() {
 
 
@@ -104,5 +94,3 @@ There's more to do here - there are a lot of redundant faces that aren't really 
 
     render();
 
-
-```
