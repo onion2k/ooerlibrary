@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: library.ooer.com
+subtitle: Code snippets
+description: A collection of useful code snippets
+author: Chris Neale
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://ooer.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -23,9 +23,9 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
-code_dir: downloads/code
+code_dir: code
 i18n_dir: :lang
-skip_render:
+skip_render: ['*/*.js']
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -41,10 +41,10 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace:
+  tab_replace: true
 
 # Category & Tag
-default_category: uncategorized
+default_category: code
 category_map:
 tag_map:
 
@@ -68,4 +68,9 @@ theme: phase
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: s3
+  bucket: library.ooer.com
+  aws_key: AKIAI2ZOLTB4G63NJNCQ
+  aws_secret: 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
+  concurrency: 4
+  region: eu-west-1

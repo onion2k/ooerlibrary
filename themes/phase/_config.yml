@@ -1,6 +1,7 @@
 menu:
-  Home: /
-  Archives: /archives
+  Ooer.com: http://www.ooer.com
+  Library: /
+  Archive: /archives
 
 addthis:
   enable: true
@@ -15,6 +16,6 @@ google_plus:
 twitter: onion2k
 github: onion2k
 
-fancybox: true
+fancybox:
 google_analytics:
 rss:
