@@ -71,6 +71,6 @@ deploy:
   type: s3
   bucket: library.ooer.com
   aws_key: AKIAI2ZOLTB4G63NJNCQ
-  aws_secret: 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
+  aws_secret: 
   concurrency: 4
   region: eu-west-1
