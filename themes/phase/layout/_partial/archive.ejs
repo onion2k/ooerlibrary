@@ -8,10 +8,6 @@ if (page.archive){
 }
 %>
 
-<header id="archive-header">
-  <h1 class="alignleft"><%= title %></h1>
-</header>
-
 <% if (pagination == 2){ %>
   <% page.posts.each(function(item){ %>
     <%- partial('article', {item: item, index: true}) %>
