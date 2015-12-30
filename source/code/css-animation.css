@@ -1,0 +1,37 @@
+
+    div#wrapper {
+        position: relative;
+        width: auto;
+        height: 400px;
+        background-color: #BBB;
+        overflow: hidden;
+    }
+
+    div#wrapper h1 {
+        font-size: 24.0rem;
+        font-family: Phosphate;
+        color: #000;
+        transform: translateZ(0);
+    }
+
+    div#wrapper article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-5deg);
+        border: 0;
+        box-shadow: 0;
+    }
+
+    div#wrapper article > h1 {
+        animation: slideright 5s infinite;
+        -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+        animation-timing-function: linear;
+    }
+
+    @-webkit-keyframes slideright {
+        0% { transform: translate(-130%); }
+        20% { transform: translate(-10%); }
+        80% { transform: translate(10%); }
+        100% { transform: translate(130%); }
+    }

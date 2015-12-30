@@ -1,14 +1,3 @@
-title: Canvas Interference Circles
-date: 2015-11-17 08:06:49
-tags: [canvas,demo]
----
-HTML5 canvases have a fun global setting called globalCompositeOperation - it's determines how pixels on the canvas are rendered when they're overwritten by a new operation. In effect they're the same sort of thing as Photoshop's layer modes.
-
-In this script white concentric circles are draw on top of each other when the canvas is set to 'difference' so a white + white = black, giving a stripe effect. Two of these circle effects are then rotated around each other giving rise to a cool psychadelic demo.
-<!-- more -->
-<canvas id="canvas" style="width: 100%; height: 600px;"></canvas>
-<script src="/code/canvas-interference-circles.js"></script>
-```javascript
 
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext('2d');
@@ -60,4 +49,3 @@ In this script white concentric circles are draw on top of each other when the c
     }
 
     render();
-```

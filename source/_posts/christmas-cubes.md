@@ -11,7 +11,7 @@ This demo also includes dat.gui to control a few things.
 <!-- more -->
 <div id="webglCanvas" style="width: 100%; height: 600px;"></div>
 <script src="/js/dat.gui.min.js"></script>
-<script src="/code/christmas-cubes/christmas-cubes.js"></script>
+<script src="/code/christmas-cubes.js"></script>
 ```javascript
 
 ```
